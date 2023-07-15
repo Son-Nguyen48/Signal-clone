@@ -1,5 +1,7 @@
 <template>
-  <div class="flex pl-[18px] h-[52px]">
+  <nav
+    class="flex pl-[18px] h-[53px] fixed bg-white w-full border-b-[1px] border-[#ebeaeb]"
+  >
     <div class="flex items-center">
       <img
         class="h-[30px] md:h-[50px]"
@@ -8,7 +10,7 @@
       />
     </div>
 
-    <TheHambuger />
+    <TheHambuger :isMenuOpen="isMenuOpen" @toggleMenu="toggleMenu" />
 
     <!-- <div class="flex-1 flex items-center">
       <ul class="flex gap-4">
@@ -17,44 +19,21 @@
         </li>
       </ul>
     </div> -->
-  </div>
+
+    <TheMenu v-show="isMenuOpen" />
+  </nav>
 </template>
 
 <script setup>
+import { ref } from "vue";
 import TheHambuger from "./UI/TheHambuger.vue";
+import TheMenu from "./UI/TheMenu.vue";
 
-const menu = [
-  {
-    id: 1,
-    name: "Get Signal",
-    link: "https://signal.org/vi/download/"
-  },
-  {
-    id: 2,
-    name: "Help",
-    link: "https://support.signal.org/"
-  },
-  {
-    id: 3,
-    name: "Blog",
-    link: "https://signal.org/blog/"
-  },
-  {
-    id: 4,
-    name: "Developers",
-    link: "https://signal.org/docs/"
-  },
-  {
-    id: 5,
-    name: "Careers",
-    link: "https://signal.org/workworkwork/"
-  },
-  {
-    id: 6,
-    name: "Donate",
-    link: "https://signal.org/vi/donate/"
-  }
-];
+let isMenuOpen = ref(false);
+
+const toggleMenu = () => {
+  isMenuOpen.value = !isMenuOpen.value;
+};
 </script>
 
 <style lang="scss" scoped></style>

@@ -1,10 +1,12 @@
 <script setup>
 import TheHeader from "./components/TheHeader.vue";
+import TheHero from "./components/TheHero.vue";
 </script>
 
 <template>
-  <main class="max-w-7xl md:mx-[87px]">
+  <main class="overflow-hidden">
     <TheHeader />
+    <TheHero />
   </main>
 </template>
 
