@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="flex pl-[18px] h-[53px] fixed bg-white w-full border-b-[1px] border-[#ebeaeb]"
+    class="flex pl-[18px] h-[53px] fixed z-50 bg-white w-full border-b-[1px] border-[#ebeaeb]"
   >
     <div class="flex items-center">
       <img
