@@ -5,6 +5,14 @@ export default {
     extend: {
       fontFamily: {
         inter: ["Inter", "sans-serif"]
+      },
+      screens: {
+        mM: "375px",
+        mL: "425px",
+        "4k": "1408px"
+      },
+      spacing: {
+        md: "100% - 48px"
       }
     }
   },

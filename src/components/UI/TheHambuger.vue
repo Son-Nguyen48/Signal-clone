@@ -4,7 +4,7 @@
     @click="toggleMenu"
     v-if="!isMenuOpen"
     href="#"
-    class="w-[52px] flex items-center justify-center ml-auto relative"
+    class="lg:hidden w-[52px] flex items-center justify-center ml-auto relative"
   >
     <div
       class="flex flex-col justify-center items-center w-4 h-7 cursor-pointer absolute transform translate-y-px"
@@ -20,7 +20,7 @@
     @click="toggleMenu"
     v-if="isMenuOpen"
     href="#"
-    class="w-[52px] flex items-center justify-center ml-auto relative"
+    class="lg:hidden w-[52px] flex items-center justify-center ml-auto relative"
   >
     <div
       class="flex flex-col justify-center items-center w-4 h-7 cursor-pointer absolute transform translate-y-1"
@@ -35,12 +35,12 @@
 
 <script setup>
 const props = defineProps(["isMenuOpen"]);
-const emit = defineEmits("toggleMenu");
+const emits = defineEmits("toggleMenu");
 
-console.log(props.isMenuOpen, "isMenuOpen", emit, "emit");
+console.log(props.isMenuOpen, "isMenuOpen", emits, "emits");
 
 const toggleMenu = () => {
-  emit("toggleMenu");
+  emits("toggleMenu");
 };
 </script>
 

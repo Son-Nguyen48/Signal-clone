@@ -4,6 +4,9 @@ import TheHero from "./components/TheHero.vue";
 import TheReason from "./components/TheReason.vue";
 import TheInfor from "./components/TheInfor.vue";
 import TheFeature from "./components/TheFeature.vue";
+import SpecialFeature from "./components/SpecialFeature.vue";
+import TheFooter from "./components/TheFooter.vue";
+import ChatAnimation from "./components/ChatAnimation.vue";
 </script>
 
 <template>
@@ -13,6 +16,9 @@ import TheFeature from "./components/TheFeature.vue";
     <TheReason />
     <TheInfor />
     <TheFeature />
+    <SpecialFeature />
+    <TheFooter />
+    <!-- <ChatAnimation /> -->
   </main>
 </template>
 
