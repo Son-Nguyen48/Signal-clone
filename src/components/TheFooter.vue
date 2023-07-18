@@ -1,10 +1,10 @@
 <template>
   <div
-    class="py-12 px-6 bg-[#3C3744] text-[#e9e9e9] lg:flex lg:flex-row-reverse lg:justify-end"
+    class="pt-12 px-6 pb-24 bg-[#3C3744] text-[#e9e9e9] lg:flex lg:flex-row-reverse lg:justify-end"
   >
-    <ul>
+    <ul class="flex-1 md:flex">
       <li
-        class="mb-6 lg:mb-0 lg:inline-block"
+        class="mb-6 lg:mb-0 lg:inline-block md:w-1/4 p-2"
         v-for="link in linkFooter"
         :key="link.id"
       >
@@ -21,7 +21,7 @@
       </li>
     </ul>
 
-    <div class="lg:flex-none lg:w-[40%]">
+    <div class="lg:flex-none lg:w-[40%] p-2">
       <p class="leading-[22px]">© 2013–2022 Signal, a 501c3 nonprofit.</p>
       <p class="leading-[22px]">
         Signal is a registered trademark in the United States and other
@@ -29,8 +29,10 @@
       </p>
       <br />
 
-      <p class="leading-[22px]">For media inquiries, contact</p>
-      <p class="leading-[22px]">press@signal.org</p>
+      <p class="leading-[22px]">
+        For media inquiries, contact
+        <a href="mailto:press@signal.org">press@signal.org</a>
+      </p>
     </div>
   </div>
 </template>

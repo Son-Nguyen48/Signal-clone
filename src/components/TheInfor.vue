@@ -1,7 +1,9 @@
 <template>
-  <section class="px-6 py-12 lg:flex lg:flex-row-reverse lg:gap-6">
+  <section
+    class="px-6 py-12 lg:flex lg:flex-row-reverse lg:gap-6 lg:justify-between 4k:px-12"
+  >
     <div
-      class="bg-[#A5CAD5] w-full h-[272px] rounded-2xl pb-[100%] md:w-md lg:w-full lg:flex-1 lg:pb-[64.209%] max-w-[648px]"
+      class="bg-[#A5CAD5] relative w-full before:content-[''] md:mx-auto before:block before:pt-[100%] rounded-2xl max-w-[648px] 4k:m-0"
     ></div>
 
     <div class="mt-8 lg:w-1/3 lg:mt-0">
