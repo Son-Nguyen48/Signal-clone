@@ -2,7 +2,7 @@
   <section class="bg-[#f6f6f6]">
     <div class="py-12 px-6 text-center">
       <div
-        class="lg:max-w-[960px] lg:mx-auto lg:flex lg:gap-6 4k:max-w-[1344px] 4k:mb-6"
+        class="lg:max-w-[960px] lg:mx-auto lg:flex lg:gap-6 4k:max-w-[1344px] 4k:mb-6 lg:mb-6"
       >
         <div
           v-for="feature in features1"
