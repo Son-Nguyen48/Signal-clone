@@ -2,31 +2,33 @@
   <section class="bg-[#f6f6f6]">
     <div class="py-12 px-6 text-center">
       <div
-        class="lg:max-w-[960px] lg:mx-auto lg:flex lg:gap-6 4k:max-w-[1344px] 4k:mb-6 lg:mb-6"
+        class="lg:max-w-[960px] min1216:max-w-[1152px] lg:mx-auto lg:flex lg:gap-6 4k:max-w-[1344px] 4k:mb-6"
       >
         <div
           v-for="feature in features1"
           :key="feature.id"
-          class="lg:w-[50%] p-[30px] lg:p-0 rounded-2xl bg-white shadow-[0_4px_12px_rgba(0,0,0,0.12)] mb-6 lg:mb-0 lg:pb-3"
+          class="lg:w-[50%] p-[30px] lg:p-0 rounded-2xl bg-white shadow-[0_4px_12px_rgba(0,0,0,0.12)] mb-6 lg:pb-3"
         >
-          <img
-            class="md:w-[370px] md:mx-auto"
-            :src="feature.src"
-            alt="feature1"
-          />
-          <h3
-            class="mt-[18px] mb-1 text-[28px] leading-8 font-extrabold text-[#1b1b1b]"
-          >
-            {{ feature.title }}
-          </h3>
-          <p class="text-[#4a4a4a] font-normal leading-[22px]">
-            {{ feature.discription }}
-          </p>
+          <div class="lg:p-[30px]">
+            <img
+              class="md:w-[370px] md:mx-auto"
+              :src="feature.src"
+              alt="feature1"
+            />
+            <h3
+              class="mt-[18px] mb-1 text-[28px] leading-8 font-extrabold text-[#1b1b1b]"
+            >
+              {{ feature.title }}
+            </h3>
+            <p class="text-[#4a4a4a] font-normal leading-[22px]">
+              {{ feature.discription }}
+            </p>
+          </div>
         </div>
       </div>
 
       <div
-        class="lg:max-w-[960px] lg:mx-auto lg:flex lg:gap-6 4k:max-w-[1344px]"
+        class="lg:max-w-[960px] min1216:max-w-[1152px] lg:mx-auto lg:flex lg:gap-6 4k:max-w-[1344px]"
       >
         <div
           v-for="feature in features2"

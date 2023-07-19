@@ -1,5 +1,5 @@
 <template>
-  <div class="px-6 py-12 lg:flex lg:flex-row-reverse">
+  <div class="px-6 py-12 lg:flex lg:flex-row-reverse lg:justify-center">
     <div>
       <img
         class="rounded-[32px] lg:w-[680px] p-3"
@@ -21,7 +21,7 @@
     </div>
   </div>
 
-  <div class="px-6 py-12 lg:flex">
+  <div class="px-6 py-12 lg:flex lg:justify-center">
     <div>
       <img
         class="rounded-[32px] lg:w-[680px] lg:p-3"

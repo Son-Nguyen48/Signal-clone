@@ -9,6 +9,7 @@ export default {
       screens: {
         mM: "375px",
         mL: "425px",
+        min1216: "1216px",
         "4k": "1408px"
       },
       spacing: {
